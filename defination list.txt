@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title> defination list </title>
+  </head>
+  <body>
+    <dl>
+      <dt><b> hardware </b> </dt>
+      <dd> <i>it is physical 
+        component
+      </i></dd>
+      <dt><b> software</b> </dt>
+      <dd><i> is a set of 
+        instruction
+      </i></dd>
+    </dl>
+  </body>
+</html>

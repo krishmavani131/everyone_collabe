@@ -1,0 +1,118 @@
+<table border>
+     <tr>
+            <th> sr. no. </th>
+            <th> name </th>
+            <th> subject </th>
+     </tr>
+     <tr>
+             <td> 1 </td>
+             <td> xyz </td>
+             <td> full stack </td>
+     </tr>
+     <tr>
+             <td> 2 </td>
+             <td> prutha </td>
+             <td> data science </td>
+     </tr>
+    <tr>
+             <td> 3 </td>
+             <td> tisha </td>
+             <td> cloud computiong </td>
+     </tr>
+     <tr>
+             <td> 4 </td>
+             <td> keshvi </td>
+             <td> software testing </td>
+     </tr>
+     <tr>
+             <td> 5 </td>
+             <td> mili </td>
+             <td> english </td>
+     </tr>
+</table>
+<table border>
+    <caption> My Table </caption>
+    <tr> 
+        <th> company</th>
+        <th> contact </th>
+        <th> country </th>
+
+    </tr>
+    <tr>
+        <td> Alfreds Futterkiste </td>
+        <td> Maria Andres </td>
+        <td> Germany </td>
+
+    </tr>
+    <tr> 
+        <td> Centro comercial Moctezuma </td>
+        <td> Francisco Chang </td>
+        <td> Mexico </td>
+    </tr>
+</table>
+<table border>
+        <caption> span simple example </caption>
+        <tr>
+                <td> A </td>
+                <td> B </td>
+                <td> C </td>
+        </tr>
+        <tr>
+                <td colspan="2"> D </td>
+                <td rowspan="3"> E </td>
+        </tr>
+        <tr> 
+                <td> F </td>
+                <td rowspan="2"> G  </td>
+        </tr>
+        <tr>
+                <td> H </td>
+        </tr>
+</table>
+<table border>
+        <caption> span bold example </caption>
+        <tr>
+                <th> A </th>
+                <th> B </th>
+                <th> C </th>
+        </tr>
+        <tr>
+                <th colspan="2"> D </th>
+                <th rowspan="3"> E </th>
+        </tr>
+        <tr> 
+                <th> F </th>
+                <th rowspan="2"> G  </th>
+        </tr>
+        <tr>
+                <th> H </th>
+        </tr>
+</table>
+<table border width="300px">
+        <caption> span DIY  </caption>
+        <tr>
+                <th> A </th>
+                <th colspan="2"> B </th>
+                <th> C </th>
+                <th> D </th>
+        </tr>
+        <tr>
+                <th rowspan="3"> E </th>
+                <th colspan="3"> F </th>
+                <th rowspan="2"> G </th>
+        </tr>
+        <tr>
+                <th> H </th>
+                <th> I </th>
+                <th> J </th>
+        </tr>
+        <tr> 
+                <th colspan="4"> K </th>
+        </tr>
+        <tr>
+                <th> L </th>
+                <th> M </th>
+                <th> N </th>
+                <th colspan="2"> O </th>
+        </tr>
+</table>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <tittle>Registration form</tittle>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend align="center"> Registration form </legend>
+            <label> Name: </label>
+            <input type="text" />
+            <br>
+            <label> Password:</label>
+            <input type="password"/>
+            <br>
+            <label> Email : </label>
+            <input type="email"/>
+            <br>
+            <label> Contact number: </label>
+            <input type="number" maxlength="10"/>
+            <br>
+            <label> Date Of Birth: </label>
+            <input type="date"/>
+            <br>
+            <label> Document </label>
+            <input type="file"/>
+            <br>
+            <label> Passport Size Photo: </label>
+            <input type="image"/>
+            <br>
+            <label> institute name: </label>
+            <input type="search"/>
+            <br>
+            <input type="submit"/>
+            <br>
+            <input type="reset"/>
+            <br> 
+            <input type="range"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

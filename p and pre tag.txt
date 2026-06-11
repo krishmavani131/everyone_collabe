@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title> p and pre tag </title>
+  </head>
+  <body>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, nemo quia vitae labore odit nostrum ducimus molestias est cupiditate dolor, praesentium modi eos provident hic eum et consectetur perferendis ullam magnam! Cumque quas mollitia repellendus modi eaque iusto et animi impedit quae iure pariatur rerum, tempora, laboriosam alias ipsum asperiores vitae nesciunt tempore at distinctio voluptates sint. Eveniet, doloremque dolorum fugit obcaecati veniam modi aliquam corrupti dolores omnis? Reiciendis repellendus ad quae eaque fugit quidem temporibus nemo cum, fuga dolores harum nesciunt! Esse laudantium tempore non. Optio, sint doloremque amet distinctio impedit laboriosam libero, minima delectus, aperiam alias ad eius. </p>
+
+    <pre> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dicta, dignissimos aliquid dolorum vel iure impedit asperiores molestiae eum architecto. Omnis praesentium incidunt sapiente sint velit, provident dicta modi. Sint dolorum, sed quam eaque est illum sequi incidunt fuga aperiam tempora,maiores a ex deleniti nesciunt repellat inventore unde, suscipit nisi beatae deserunt distinctio velit magni consequuntur. Culpa eveniet veniam veritatis quidem eos, expedita soluta incidunt. Ipsa ullam nostrum blanditiis eligendi officiis molestiae obcaecati beatae ne ciunt quod quas iste, dolorum accusamus amet vel. Quos, inventore rerum voluptatibus totam adipisci qui labore nostrum dolore reiciendis placeat dicta recusandae! Necessitatibus, repellat ex.</pre>
+    <font face="gigi" > prutha </font>
+    <font size="5"> prutha </font>
+    <font color="blue"> prutha </font>
+  </body>

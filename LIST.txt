@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title> list </title>
+    </head>
+    <body> 
+        <ol> 
+            <li> ABC </li>
+            <li> DEF </li>
+            <li> PQR </li>
+            <li> XYZ </li>
+        </ol>
+        <ol type="A"> 
+            <li> ABC </li>
+            <li> DEF </li>
+            <li> PQR </li>
+            <li> XYZ </li>
+        </ol>
+        <ol type="a"> 
+            <li> ABC </li>
+            <li> DEF </li>
+            <li> PQR </li>
+            <li> XYZ </li>
+        </ol>
+        <ol type="I"> 
+            <li> ABC </li>
+            <li> DEF </li>
+            <li> PQR </li>
+            <li> XYZ </li>
+        </ol>
+        <ol type="i"> 
+            <li> ABC </li>
+            <li> DEF </li>
+            <li> PQR </li>
+            <li> XYZ </li>
+        </ol>
+        <ol type="1"> 
+            <li> ABC </li>
+            <li> DEF </li>
+            <li> PQR </li>
+            <li> XYZ </li>
+        </ol>
+        <ol type="1" start="3">
+            <li> ABC </li>
+            <li> DEF </li>
+            <li> PQR </li>
+            <li> XYZ </li>
+        </ol>
+        <ol> 
+            <li> ABC </li>
+            <li> DEF </li>
+              <ol type="a"> 
+                <li> 2.1 </li>
+                <li> 2.2 </li>
+              </ol>
+            <li> PQR </li>
+               <ol type="i" start="2">
+                <li> 3.1 </li>
+                  <ol type="I" start="4">
+                    <li> 3.1.1 </li>
+                    <li> 3.1.2 </li>
+                  </ol>
+                <li> 3.2 </li>
+               </ol>
+            <li> XYZ </li>
+               <ol type="A" start="4">
+                 <li> 4.1 </li>
+                  <ol type="1" start="3">
+                    <li> 4.1.1 </li>
+                    <li> 4.1.2 </li>
+                  </ol>
+               </ol>
+        </ol>
+    </body>
+</html>
+<html>
+    <head>
+        <title> list </title>
+    </head>
+    <body> 
+        <ul> 
+            <li> ABC </li>
+            <li> PQR </li>
+            <li> xyz </li>
+        </ul>
+        <ul type="disc"> 
+            <li> ABC </li>
+            <li> PQR </li>
+            <li> xyz </li>
+        </ul>
+        <ul type="circle"> 
+            <li> ABC </li>
+            <li> PQR </li>
+            <li> xyz </li>
+        </ul>
+        <ul type="square"> 
+            <li> ABC </li>
+            <li> PQR </li>
+            <li> xyz </li>
+        </ul>
+        <ul type="none"> 
+            <li> ABC </li>
+            <li> PQR </li>
+            <li> xyz </li>
+        </ul>
+        <ol type="1"> 
+            <li> ABC </li>
+             <ul type="disc">
+                <li> 1.1 </li>
+                <li> 1.2 </li>
+                  <ul type="circle" >
+                    <li> 1.2.1 </li>
+                    <li> 1.2.2 </li>
+                    <li> 1.2.3 </li>
+                  </ul>
+                <li> 1.3 </li>
+             </ul>
+            <li> DEF </li>
+             <ol type="A" start="4">
+                <li> 2.1 </li>
+                <li> 2.2 </li> 
+                 <ol type="I" start="5">
+                    <li> 2.2.1 </li>
+                    <li> 2.2.2 </li>
+                     <ul type="square" > 
+                        <li> 2.2.2.1 </li>
+                        <li> 2.2.2.2 </li>
+                     </ul>
+                    <li> 2.2.3 </li>
+                 </ol>
+             </ol>
+            <li> PQR </li>
+              <ul type="circle"> 
+               <li> 3.1 </li>
+                 <ol type="a">
+                    <li> 3.1.1 </li>
+                      <ul type="square">
+                        <li> 3.1.1.1 </li>
+                        <li> 3.1.1.2 </li>
+                         <ol type="i" start="4">
+                            <li> 3.1.1.2.1 </li>
+                            <li> 3.1.1.2.2 </li>
+                         </ol>
+                      </ul>
+                    <li> 3.1.2 </li>
+                </ol>
+               <li> 3.2 </li>
+              </ul>
+            <li> XYZ </li>
+         </ol>
+    </body>
+</html>
+

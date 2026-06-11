@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> my self</title>
+    </head>
+    <body bgcolor="red" background = "C:\Users\dhruvraj\Downloads\background.jpg" text ="yellow">
+        <h1 align ="left"> prutha </h1>
+        <h2 align ="right"> prutha </h2>
+        <h3 align ="center"> prutha </h3>
+        <h4 align ="left"> prutha </h4>
+        <h5 align ="right"> prutha </h5>
+        <h6 align ="center"> prutha </h6>
+        <h7> prutha </h7>
+        prutha
+     <a href = "http://www.gmail.com" target = "-blanck">
+        gmail
+        <pre>
+            a 
+            b
+            c
+            d
+            a
+            b
+            c
+            d
+        </pre>
+        <a name = "top"> <header></header></a>
+        <pre>
+            a 
+            b
+            c
+            d
+            a
+            b
+            c
+            d
+        </pre>
+        <a href = "# top"> back to top </a>
+    </body>
+</html>

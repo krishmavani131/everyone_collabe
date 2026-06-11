@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>   </title>
+    </head>
+    <body>
+        <table border width="500px">
+           
+            <tr align="center">
+                <td colspan="2"> pizza shop 2.0 </td>
+            </tr>
+            <tr align="center">
+                <td> name : </td>
+                <td> <input type="text"/></td>
+             </tr>
+             <tr align="center">
+                <td> topping </td>
+                <td> <input type="radio" name="g1"/>option 1 <br>
+                     <input type="radio" name="g1"/>option 2 <br>
+                     <input type="radio" name="g1"/>option 3 <br>
+                 </td>
+             </tr>
+             <tr align="center">
+                <td>sauce</td>
+                <td> 
+                    <select>
+                        <option> tomato </option>
+                        <option> masterd </option>
+                        <option> mayoniz </option>
+                    </select>
+                </td>
+             </tr>
+             <tr align="center">
+                <td>extra</td>
+                <td> <input type="checkbox"/> cheese
+                    <input type="checkbox"/> topping
+                    <input type="checkbox"/> gluten free base
+                     </td>
+             </tr>
+                <tr align="center">
+                    <td colspan="2"> <label>deleviry instruction</label>
+                    <textarea rows="5" cols="20"/></textarea>  
+                    </td>
+                    
+                </tr>
+                <tr align="center" >
+                    <td colspan="2"><input type="button" value="send my order"/></td>
+                </tr>
+        </table>
+    </body>
+</html>
+

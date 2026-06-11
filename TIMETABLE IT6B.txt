@@ -1,0 +1,99 @@
+<table border width="500px">
+      <caption> TIMETABLE IT6B </caption>
+         <tr align="center">
+            <th> time slot </th>
+            <th> monday </th>
+            <th> Tuesday </th>
+            <th> Wednesday </th>
+            <th> Thursday </th>
+         </tr>
+         <tr align="center"> 
+            <td> 08:00 AM to 08:55 </td>
+            <td rowspan="2"> SECE3231-CLOUD COMPUTING & APPLICATIONS 
+                H811
+            </td>
+            <td rowspan="2"> SEIT3241-FULL STACK DEVELOPMENT
+                H811
+            </td>
+            <td> TNCP3010-CORPORATE GROOMING & ETIQUETTE
+                H601
+            </td>
+            <td> SECE3640-SOFTWARE TESTING & QUALITY ASSURANCE 
+                H811
+            </td>
+         </tr>
+         <tr align="center"> 
+            <td> 08:55 AM to 09:50AM </td>
+            <td >SECE3640-SOFTWARE TESTING & QUALITY ASSURANCE 
+                H601
+             </td>
+                <td> TNCP3010-CORPORATE GROOMING & ETIQUETTE
+                H811
+            </td>
+         </tr>
+         <tr align="center">
+            <td> 09:50AM to 10:45AM </td>
+            <td rowspan="2">SECE3640-SOFTWARE TESTING & QUALITY ASSURANCE 
+                H811
+             </td>
+             <td> SEIT3262-DATA SCIENCE 
+                H811
+             </td>
+             <td> free lecture </td>
+             <td> SEIT3241-FULL STACK DEVELOPMENT
+                H811
+             </td>
+         </tr>
+         <tr align="center">
+             <td> 10:45 AM to 11:40AM </td>
+            <td> SEIT3262-DATA SCIENCE 
+                H811
+             </td>
+              <td> free lecture </td>
+            <td> SEIT3241-FULL STACK DEVELOPMENT
+                H811
+             </td>
+         </tr>
+         <tr align="center">
+             <td> 11:40 AM to 12:35 AM </td> 
+            <td colspan="4"> BREAK </td>
+         </tr>
+         <tr align="center">
+             <td> 12:35 PM to 01:30 PM </td>
+            <td>CLSC2120 - INDIAN HEALTH SCIENCE
+                H811
+            </td>
+            <td> SEIT3241-FULL STACK DEVELOPMENT
+                H811
+             </td>
+              <td> SECE3231-CLOUD COMPUTING & APPLICATIONS 
+                H811
+            </td>
+             <td> SECE3231-CLOUD COMPUTING & APPLICATIONS 
+                H811
+            </td>
+         </tr>
+         <tr align="center">
+             <td> 01:30 PM  to 02:25 PM </td>
+           <td>CLSC2120 - INDIAN HEALTH SCIENCE
+                H811
+            </td>
+            <td rowspan="2"> SEIT3262-DATA SCIENCE 
+                H811 
+            </td>
+            <td> FREE LECTURE </td> 
+             <td> SECE3231-CLOUD COMPUTING & APPLICATIONS 
+                H811
+            </td>
+         </tr>
+         <tr align="center">
+             <td> 02:25 PM to 03:20 PM </td>
+            <td> TNCP3010-CORPORATE GROOMING & ETIQUETTE
+                H601
+            </td>
+             <td> FREE LECTURE </td> 
+              <td> SEIT3262-DATA SCIENCE 
+                H811
+             </td>
+         </tr>
+</table>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> formatting tags </title>
+    </head>
+    <body>
+        pruthakuvarba </br> <hr size="5">
+        full stack <hr> <hr size="5">
+        <b> devlopment</b> <br> <hr size="5">
+        <i> IT6b</i> <br> <hr size="5">
+        <b><i> 23se02it146 </i></b> <hr size="5">
+        <!-- for comment ctrl+/ -->
+         <strong> p p savani uni</strong> <br><hr size="5">
+         <em> dhamdod</em> <br> <hr size="5">
+         <tt> piyu </tt> <br> <hr size="5">
+         <small> b.tech </small><br> <hr size="5">
+         <big> information </big><br> <hr size="5">
+         <mark> technology</mark><br> <hr size="5">
+         <u> surat </u><br> <hr size="5">
+         <ins> near national highway</ins><br> <hr size="5">
+         <del> dhamdod</del><br> <hr size="5">
+    </body>
+</html>
