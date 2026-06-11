@@ -1,9 +1,0 @@
-langchain
-langchain-openai
-langchain-community
-chromadb
-fastapi
-uvicorn
-python-multipart
-pypdf
-python-dotenv
