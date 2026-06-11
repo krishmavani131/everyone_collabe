@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Operators & Methods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; padding-top: 20px; }
+        .res-box { font-weight: bold; color: #0d6efd; font-size: 1.1rem; }
+        .method-res { font-weight: bold; color: #dc3545; font-family: monospace; }
+        .input-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid #dee2e6; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">JS OPERATORS</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="operators.html">Home</a>
+            <a class="nav-link" href="Arithmetic.html">Arithmetic</a>
+            <a class="nav-link" href="Assignment.html">Assignment</a>
+            <a class="nav-link" href="Comparison.html">Comparison</a>
+            <a class="nav-link active" href="String.html">String</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h3 class="mb-3">1. String Operators</h3>
+    <div class="input-card shadow-sm mx-auto" style="max-width: 650px;">
+        <div class="row mb-3">
+            <div class="col-6">
+                <label class="form-label fw-bold">String 1 (x)</label>
+                <input type="text" id="t1" class="form-control" placeholder="e.g. Hello">
+            </div>
+            <div class="col-6">
+                <label class="form-label fw-bold">String 2 (y)</label>
+                <input type="text" id="t2" class="form-control" placeholder="e.g. Dhruvi">
+            </div>
+        </div>
+
+        <table class="table table-bordered text-center">
+            <thead class="table-info">
+                <tr>
+                    <th>Operator</th>
+                    <th>Action</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>+</strong> (Concatenation)</td>
+                    <td><button onclick="joinWithPlus()" class="btn btn-info btn-sm text-white">Join (x + y)</button></td>
+                    <td><span id="res_plus" class="res-box"></span></td>
+                </tr>
+                <tr>
+                    <td><strong>+=</strong> (Concatenate Assignment)</td>
+                    <td><button onclick="joinWithPlusEqual()" class="btn btn-info btn-sm text-white">Append (x += y)</button></td>
+                    <td><span id="res_pequal" class="res-box"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr class="my-5">
+
+    <h3 class="mb-3">2. String Methods (Direct Output)</h3>
+    <p>Target String: <code class="fs-5">"Hello Dhruvi"</code></p>
+    
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover bg-white shadow-sm text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Method Name</th>
+                    <th>Code Example</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>charAt</td><td>str.charAt(4)</td><td id="r1" class="method-res"></td></tr>
+                <tr><td>indexOf</td><td>str.indexOf('v')</td><td id="r2" class="method-res"></td></tr>
+                <tr><td>lastIndexOf</td><td>str.lastIndexOf('h')</td><td id="r3" class="method-res"></td></tr>
+                <tr><td>substring</td><td>str.substring(0, 3)</td><td id="r4" class="method-res"></td></tr>
+                <tr><td>substr</td><td>str.substr(6, 4)</td><td id="r5" class="method-res"></td></tr>
+                <tr><td>replace</td><td>str.replace('Dhruvi', 'Dhruvisha')</td><td id="r6" class="method-res"></td></tr>
+                <tr><td>toLowerCase</td><td>str.toLowerCase()</td><td id="r7" class="method-res"></td></tr>
+                <tr><td>toUpperCase</td><td>str.toUpperCase()</td><td id="r8" class="method-res"></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+
+    function joinWithPlus() {
+        let x = document.getElementById('t1').value;
+        let y = document.getElementById('t2').value;
+        // Dono strings ko join karke display karna
+        document.getElementById('res_plus').innerText = x + " " + y;
+    }
+
+    function joinWithPlusEqual() {
+        let x = document.getElementById('t1').value;
+        let y = document.getElementById('t2').value;
+        x += " "; 
+        x += y;   
+        document.getElementById('res_pequal').innerText = x;
+    }
+
+    let str = "Hello Dhruvi";
+
+    document.getElementById('r1').innerText = str.charAt(4);
+    document.getElementById('r2').innerText = str.indexOf('v');
+    document.getElementById('r3').innerText = str.lastIndexOf('h');
+    document.getElementById('r4').innerText = str.substring(0, 3);
+    document.getElementById('r5').innerText = str.substr(6, 4);
+    document.getElementById('r6').innerText = str.replace('Dhruvi', 'Dhruvisha');
+    document.getElementById('r7').innerText = str.toLowerCase();
+    document.getElementById('r8').innerText = str.toUpperCase();
+</script>
+
+</body>
+</html>

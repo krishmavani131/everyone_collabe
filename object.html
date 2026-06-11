@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Math and Objects Task</title>
+</head>
+<body>
+
+    <div id="myDiv" style="width: 300px; height: 100px; border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+       Welcome in PPSU    
+    </div>
+
+    <button onclick="startTimer()">Start 7s Timer</button>
+    <hr>
+
+    <script>
+        document.write("<h2>1. Object Creation</h2>");
+
+        const obj1 = { enrolment: "47", name: "Dhruvi", division: "IT6A" };
+        document.write("Way 1: " + obj1.name + " | " + obj1.enrolment + " | " + obj1.division + "<br>");
+
+        const obj2 = new Object();
+        obj2.subject = "Full Stack";
+        obj2.faculty = "Zarana mam";
+        obj2.ratings = 5;
+        document.write("Way 2: " + obj2.subject + " | " + obj2.faculty + " | " + obj2.ratings + "<br>");
+
+        function Fruit(name, color) {
+            this.fruitname = name;
+            this.color = color;
+        }
+        const obj3 = new Fruit("Mango", "Yellow");
+        document.write("Way 3: " + obj3.fruitname + " | " + obj3.color + "<hr>");
+
+
+        document.write("<h2>2. Math Properties</h2>");
+        document.write("E: " + Math.E + "<br>");
+        document.write("LN2: " + Math.LN2 + "<br>");
+        document.write("LN10: " + Math.LN10 + "<br>");
+        document.write("LOG2E: " + Math.LOG2E + "<br>");
+        document.write("LOG10E: " + Math.LOG10E + "<br>");
+        document.write("PI: " + Math.PI + "<br>");
+        document.write("SQRT1_2: " + Math.SQRT1_2 + "<br>");
+        document.write("SQRT2: " + Math.SQRT2 + "<hr>");
+
+
+        document.write("<h2>3. Math Methods</h2>");
+        document.write("abs(-5): " + Math.abs(-5) + "<br>");
+        document.write("sin(1): " + Math.sin(1) + "<br>");
+        document.write("cos(1): " + Math.cos(1) + "<br>");
+        document.write("tan(1): " + Math.tan(1) + "<br>");
+        document.write("acos(0.5): " + Math.acos(0.5) + "<br>");
+        document.write("asin(0.5): " + Math.asin(0.5) + "<br>");
+        document.write("atan(1): " + Math.atan(1) + "<br>");
+        document.write("atan2(1,1): " + Math.atan2(1,1) + "<br>");
+        document.write("random(): " + Math.random() + "<br>");
+        document.write("exp(1): " + Math.exp(1) + "<br>");
+        document.write("ceil(4.1): " + Math.ceil(4.1) + "<br>");
+        document.write("floor(4.9): " + Math.floor(4.9) + "<br>");
+        document.write("log(2): " + Math.log(2) + "<br>");
+        document.write("round(4.5): " + Math.round(4.5) + "<br>");
+        document.write("pow(2,3): " + Math.pow(2,3) + "<br>");
+        document.write("max(1,5,10): " + Math.max(1,5,10) + "<br>");
+        document.write("sqrt(64): " + Math.sqrt(64) + "<hr>");
+
+
+        let myWin;
+
+        function openWin() {
+            myWin = window.open("", "", "width=200,height=100");
+            myWin.document.write("Window Opened!");
+        }
+
+        function closeWin() {
+            if (myWin) myWin.close();
+        }
+
+        function startTimer() {
+            setTimeout(function() {
+                alert("Welcome Dhruvi");
+                document.getElementById("myDiv").style.backgroundColor = "orange";
+            }, 7000);
+        }
+    </script>
+
+    <button onclick="openWin()">open()</button>
+    <button onclick="closeWin()">close()</button>
+
+</body>
+</html>

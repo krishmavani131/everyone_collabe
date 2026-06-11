@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // --- Defining the data using your 3 specific methods ---
+
+// 1. Simple Array
+let subArr = ["JavaScript"];
+
+// 2. New Keyword Array
+let contactArr = new Array();
+contactArr[0] = 5;
+
+// 3. Constructor Style
+function PPSUBuilding(name) {
+    this.info = [name];
+}
+let buildingObj = new PPSUBuilding("PPSU");
+
+// --- NEW: Combine them into one array to print ---
+let finalData = [subArr[0], contactArr[0], buildingObj.info[0]];
+
+// Print the array to the console (F12 to see it) or Alert
+alert("Array Data: " + finalData.join(", "));
+
+// --- Interaction Logic ---
+
+// Alert: Welcome using name and greetings
+alert("Welcome to " + buildingObj.info[0] + "! Learning " + subArr[0]);
+
+// Confirm: Store button value in variable 'hello'
+let hello = confirm("Do you want to enter a fruit name?");
+
+if (hello) {
+    // Prompt: Take fruit name
+    let fruitName = prompt("Enter a fruit name:");
+    
+    // Alert: Print the fruit name
+    if (fruitName) {
+        alert("The fruit you entered is: " + fruitName);
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Modern Human-Touch Styling */
+        body {
+            background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 40px 0;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+        .nav-pills .nav-link {
+            color: #0072ff;
+            font-weight: 600;
+            border-radius: 12px;
+            margin: 0 5px;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0072ff;
+            box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+        }
+        .logic-card {
+            background: white;
+            border: none;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            transition: 0.3s;
+            border-bottom: 4px solid #e0e0e0;
+        }
+        .logic-card:hover {
+            transform: translateY(-8px);
+            border-bottom: 4px solid #0072ff;
+        }
+        .res-display {
+            background: #f1f3f5;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: 500;
+            color: #333;
+            min-height: 45px;
+            border-left: 5px solid #0072ff;
+        }
+        .btn-action {
+            background: #0072ff;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            transition: 0.2s;
+        }
+        .btn-action:hover { background: #0056b3; color: white; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="glass-panel">
+        <h2 class="text-center mb-4"> JavaScript Logics </h2>
+
+        <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-cond-tab" data-bs-toggle="pill" data-bs-target="#pills-cond">Conditional Logic</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-loop-tab" data-bs-toggle="pill" data-bs-target="#pills-loop">Looping Magic</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-cond">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>1. Simple If (Water Temp)</h6>
+                            <input type="number" id="tempInput" class="form-control mb-2" placeholder="Enter Temp in °C">
+                            <button class="btn-action" onclick="runSimpleIf()">Check State</button>
+                            <div id="resIf" class="res-display">Waiting for input...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>2. If-Else (Voter Check)</h6>
+                            <input type="number" id="voterAge" class="form-control mb-2" placeholder="How old are you?">
+                            <button class="btn-action" onclick="runVoterCheck()">Can I Vote?</button>
+                            <div id="resVoter" class="res-display">Waiting...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>3. Else-If Ladder (Grades)</h6>
+                            <input type="number" id="percInput" class="form-control mb-2" placeholder="Enter Percentage %">
+                            <button class="btn-action" onclick="runGradeLadder()">Get Grade</button>
+                            <div id="resGrade" class="res-display">Waiting...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>4. Switch (Calculator)</h6>
+                            <div class="input-group mb-2">
+                                <input type="number" id="num1" class="form-control" placeholder="No 1">
+                                <input type="number" id="num2" class="form-control" placeholder="No 2">
+                            </div>
+                            <select id="opSelect" class="form-select mb-2">
+                                <option value="1">1. Add (+)</option>
+                                <option value="2">2. Sub (-)</option>
+                                <option value="3">3. Mul (*)</option>
+                                <option value="4">4. Div (/)</option>
+                                <option value="5">5. Mod (%)</option>
+                            </select>
+                            <button class="btn-action" onclick="runSwitchCalc()">Run Math</button>
+                            <div id="resSwitch" class="res-display">Result: 0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-loop">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>1. For Loop (Pattern)</h6>
+                            <button class="btn-action" onclick="runForPattern()">Generate Pyramid</button>
+                            <div id="resPattern" class="res-display" style="white-space: pre; font-family: monospace;">...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>2. While Loop (Primes)</h6>
+                            <input type="number" id="primeLimit" class="form-control mb-2" placeholder="Limit (e.g. 100)">
+                            <button class="btn-action" onclick="runWhilePrimes()">Find Primes</button>
+                            <div id="resPrime" class="res-display">...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>3. Do-While (Choice)</h6>
+                            <button class="btn-action" onclick="runDoWhilePrompt()">Open Prompt Test</button>
+                            <div id="resDo" class="res-display">...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="logic-card">
+                            <h6>4. For-In (Math Table)</h6>
+                            <input type="number" id="tableOf" class="form-control mb-2" placeholder="Enter Number">
+                            <button class="btn-action" onclick="runForInTable()">Generate Table</button>
+                            <div id="resTable" class="res-display">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
