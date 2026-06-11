@@ -1,2 +1,0 @@
-include update_data.sh
-recursive-include currency_converter *.csv *.zip
