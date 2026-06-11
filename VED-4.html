@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WanderCanvas | Gallery</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#070b16;color:#eef3ff}
+    header,footer{padding:18px;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.08)}
+    footer{border-top:1px solid rgba(255,255,255,.08);border-bottom:none}
+    nav a{color:#eef3ff;text-decoration:none;margin-right:10px;padding:7px 10px;border-radius:10px}
+    nav a:hover{background:rgba(86,214,255,.12)}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    figure{margin:0;background:rgba(17,26,46,.85);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+    img{width:100%;height:220px;object-fit:cover;display:block}
+    figcaption{padding:10px;color:#b9c6ff}
+    .muted{color:#b9c6ff}
+    .note{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.06);padding:12px;border-radius:14px;margin-bottom:14px}
+  </style>
+</head>
+<body>
+<header>
+  <div style="font-weight:800;font-size:22px;">WanderCanvas</div>
+  <div class="muted">Photo stories from the road</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="note">
+    <b>Tip:</b> Replace image links with your own photos later.<br>
+    Extra text style: <i>italic</i>, <em>emphasis</em>, <tt>typewriter</tt>.
+  </div>
+
+  <section class="grid">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=1200" alt="Beach">
+      <figcaption>Coastal calm — early morning walk.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=1200" alt="Street">
+      <figcaption>Old street lanes — best explored slow.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200" alt="Mountains">
+      <figcaption>Mountain light — keep batteries charged.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200" alt="Train">
+      <figcaption>Train windows — instant travel cinema.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1200" alt="Shoes">
+      <figcaption>Comfort shoes — underrated hero.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1500043357865-c6b8827edf7f?w=1200" alt="Desert">
+      <figcaption>Desert textures — carry extra water.</figcaption>
+    </figure>
+  </section>
+</div>
+
+<footer>
+  <div>© 2026 WanderCanvas</div>
+</footer>
+</body>
+</html>

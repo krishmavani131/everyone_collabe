@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WanderCanvas | Destinations</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#050814;color:#eef3ff}
+    header,footer{padding:18px;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.08)}
+    footer{border-top:1px solid rgba(255,255,255,.08);border-bottom:none}
+    nav a{color:#eef3ff;text-decoration:none;margin-right:10px;padding:7px 10px;border-radius:10px}
+    nav a:hover{background:rgba(86,214,255,.12)}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .card{background:rgba(17,26,46,.85);border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:16px}
+    img{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,.08)}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{border:1px solid rgba(255,255,255,.1);padding:10px;text-align:left}
+    th{background:rgba(86,214,255,.12)}
+    .muted{color:#b9c6ff}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(124,255,166,.12);border:1px solid rgba(124,255,166,.25);color:#7cffa6}
+  </style>
+</head>
+<body>
+<header>
+  <div style="font-weight:800;font-size:22px;">WanderCanvas</div>
+  <div class="muted">Curated destinations with maps and embeds</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+    <article id="jaipur" class="card">
+      <span class="pill">Heritage</span>
+      <h2>Jaipur</h2>
+      <p class="muted">Forts, bazaars, and warm evening light for photography.</p>
+      <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200" alt="Palace architecture">
+      <p>Best photo hour: <b>golden</b> light. Stay hydrated: H<sub>2</sub>O.</p>
+      <a href="blogs.html">Read related blogs</a>
+    </article>
+
+    <article id="mountains" class="card">
+      <span class="pill">Nature</span>
+      <h2>Mountains</h2>
+      <p class="muted">Easy hikes, viewpoints, and a calm pace.</p>
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200" alt="Mountain landscape">
+      <p>Plan rest stops every 2<sup>1</sup> hours on long walks.</p>
+
+      <h3>Checklist</h3>
+      <ol>
+        <li>Layering</li>
+        <li>Snacks</li>
+        <li>Offline map</li>
+      </ol>
+    </article>
+  </div>
+
+  <div class="card" style="margin-top:14px;">
+    <h2>Destination Table</h2>
+    <table>
+      <tr><th>Place</th><th>Best for</th><th>Suggested days</th></tr>
+      <tr><td>Jaipur</td><td>History + food</td><td>2</td></tr>
+      <tr><td>Goa</td><td>Beaches</td><td>3</td></tr>
+      <tr><td>Mountains</td><td>Trekking</td><td>3</td></tr>
+    </table>
+  </div>
+
+  <div class="grid" style="margin-top:14px;">
+    <div class="card">
+      <h3>Embed (HTML Page)</h3>
+      <p class="muted">Example: embedding your own home page inside this page.</p>
+      <embed src="index.html" type="text/html" width="100%" height="260">
+      <p class="muted">If embed doesn’t show, try iframe below.</p>
+    </div>
+
+    <div class="card">
+      <h3>Iframe (Map Example)</h3>
+      <p class="muted">Replace with your own embed link if needed.</p>
+      <iframe
+        width="100%" height="260" style="border:0;border-radius:14px"
+        loading="lazy" allowfullscreen
+        src="https://www.openstreetmap.org/export/embed.html?bbox=75.75%2C26.85%2C75.85%2C26.95&layer=mapnik">
+      </iframe>
+      <p class="muted">OpenStreetMap preview for Jaipur area.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>© 2026 WanderCanvas</div>
+</footer>
+</body>
+</html>

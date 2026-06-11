@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WanderCanvas | Blogs</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#070b16;color:#eef3ff}
+    header,footer{padding:18px;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    footer{border-top:1px solid rgba(255,255,255,.08);border-bottom:none}
+    nav a{color:#eef3ff;text-decoration:none;margin-right:10px;padding:7px 10px;border-radius:10px}
+    nav a:hover{background:rgba(86,214,255,.12)}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .posts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .post{background:rgba(17,26,46,.85);border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:16px}
+    .tag{display:inline-block;font-size:12px;padding:5px 8px;border:1px solid rgba(124,255,166,.25);border-radius:999px;color:#7cffa6;background:rgba(124,255,166,.12)}
+    .muted{color:#b9c6ff}
+    .read{display:inline-block;margin-top:8px;color:#56d6ff}
+    .read:hover{text-decoration:underline}
+    .inline{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.06);padding:10px;border-radius:12px}
+  </style>
+  <script>
+    function filterPosts(){
+      const q = document.getElementById("q").value.toLowerCase();
+      const cards = document.querySelectorAll(".post");
+      cards.forEach(c=>{
+        const text = c.innerText.toLowerCase();
+        c.style.display = text.includes(q) ? "block" : "none";
+      });
+    }
+  </script>
+</head>
+<body>
+<header>
+  <div style="font-weight:800;font-size:22px;">WanderCanvas</div>
+  <div class="muted">Blog feed with search</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="inline">
+    Search: <input id="q" type="search" placeholder="mountain, street food, budget..." onkeyup="filterPosts()">
+    <br><span class="muted">Tip: Use keywords like <mark>budget</mark>, <mark>temple</mark>, <mark>beach</mark>.</span>
+  </div>
+
+  <h2 style="margin-top:16px;">Latest Posts</h2>
+
+  <section class="posts">
+    <article class="post">
+      <span class="tag">Budget</span>
+      <h3>₹999 Day Trip: Fort, Food & Photos</h3>
+      <p class="muted">A practical plan using buses, shared autos, and street food stops.</p>
+      <p>Carry ID in a <b>safe pocket</b> and keep notes in <tt>short bullets</tt>.</p>
+      <a class="read" href="destinations.html#jaipur">Related: Jaipur</a>
+    </article>
+
+    <article class="post">
+      <span class="tag">Nature</span>
+      <h3>Cloud Walk: A Beginner Trek Guide</h3>
+      <p class="muted">Warm layers, hydration, and pacing for first-time trekkers.</p>
+      <p>Altitude feels like 10<sup>2</sup> extra steps; breathe slow and steady.</p>
+      <a class="read" href="destinations.html#mountains">Related: Mountains</a>
+    </article>
+
+    <article class="post">
+      <span class="tag">Food</span>
+      <h3>Street Food Etiquette (No Awkward Moments)</h3>
+      <p class="muted">How to order, where to stand, and what to avoid.</p>
+      <p>Try <i>small</i> portions first; then go big.</p>
+      <a class="read" href="contact.html">Ask for food recs</a>
+    </article>
+
+    <article class="post">
+      <span class="tag">Culture</span>
+      <h3>Temple Trails: Respectful Travel Checklist</h3>
+      <p class="muted">Dress basics, photography rules, and donation tips.</p>
+      <p>Respect signs, keep phone silent, and follow local guidance.</p>
+      <a class="read" href="gallery.html">See photos</a>
+    </article>
+  </section>
+
+  <hr style="margin:18px 0;border:0;border-top:1px solid rgba(255,255,255,.08)">
+
+  <h3>Quick Links</h3>
+  <ul>
+    <li><a class="read" href="index.html#plan">Mini itinerary on Home</a></li>
+    <li><a class="read" href="contact.html">Collaborate / Contact</a></li>
+  </ul>
+</div>
+
+<footer>
+  <div>© 2026 WanderCanvas</div>
+</footer>
+</body>
+</html>

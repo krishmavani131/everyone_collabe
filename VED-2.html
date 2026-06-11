@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WanderCanvas | Contact</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#050814;color:#eef3ff}
+    header,footer{padding:18px;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.08)}
+    footer{border-top:1px solid rgba(255,255,255,.08);border-bottom:none}
+    nav a{color:#eef3ff;text-decoration:none;margin-right:10px;padding:7px 10px;border-radius:10px}
+    nav a:hover{background:rgba(86,214,255,.12)}
+    .wrap{max-width:900px;margin:0 auto;padding:18px}
+    .card{background:rgba(17,26,46,.85);border:1px solid rgba(255,255,255,.08);padding:16px;border-radius:16px}
+    label{display:block;margin:10px 0 6px}
+    input,select,textarea{width:100%;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#eef3ff}
+    textarea{min-height:110px;resize:vertical}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .muted{color:#b9c6ff}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .btn{padding:10px 12px;border-radius:12px;border:0;cursor:pointer;font-weight:800}
+    .primary{background:linear-gradient(90deg,#56d6ff,#7cffa6);color:#07101f}
+    .ghost{background:transparent;color:#eef3ff;border:1px solid rgba(255,255,255,.18)}
+    .small{font-size:13px}
+  </style>
+  <script>
+    function previewName(){
+      const name = document.getElementById("name").value || "Traveler";
+      document.getElementById("hello").innerHTML = "Hello, " + name + "!";
+    }
+    function imgSubmit(){
+      alert("Image submit clicked (demo).");
+      return false;
+    }
+  </script>
+</head>
+<body>
+<header>
+  <div style="font-weight:800;font-size:22px;">WanderCanvas</div>
+  <div class="muted">Work with us / Send a message</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Contact Form</h2>
+    <p id="hello" class="muted">Hello, Traveler!</p>
+
+    <form action="#" method="post" oninput="previewName()">
+      <fieldset>
+        <legend><b>Your details</b></legend>
+
+        <div class="row">
+          <div>
+            <label for="name">Full name (text)</label>
+            <input id="name" type="text" placeholder="Enter your name">
+          </div>
+          <div>
+            <label for="pass">Password (password)</label>
+            <input id="pass" type="password" placeholder="Create a password">
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="email">Email (email)</label>
+            <input id="email" type="email" placeholder="name@example.com">
+          </div>
+          <div>
+            <label for="phone">Number (number)</label>
+            <input id="phone" type="number" placeholder="e.g., 9876543210">
+          </div>
+        </div>
+
+        <label for="date">Travel date (date)</label>
+        <input id="date" type="date">
+
+        <label for="budget">Budget range (range)</label>
+        <input id="budget" type="range" min="0" max="100" value="40">
+        <div class="muted small">Move slider to set approximate budget level.</div>
+
+        <label for="query">Search (search)</label>
+        <input id="query" type="search" placeholder="Search on this page (demo field)">
+
+        <label>Trip style (radio)</label>
+        <input type="radio" name="style" value="budget"> Budget
+        <br>
+        <input type="radio" name="style" value="luxury"> Luxury
+        <br>
+        <input type="radio" name="style" value="adventure"> Adventure
+
+        <label>Packing list (checkbox)</label>
+        <input type="checkbox" name="pack" value="camera"> Camera
+        <br>
+        <input type="checkbox" name="pack" value="shoes"> Trek shoes
+        <br>
+        <input type="checkbox" name="pack" value="medkit"> Med kit
+
+        <label for="file">Upload photo (file)</label>
+        <input id="file" type="file">
+
+        <label for="msg">Message (textarea)</label>
+        <textarea id="msg" placeholder="Write your travel idea..."></textarea>
+
+        <input type="hidden" name="source" value="wanderCanvasForm">
+      </fieldset>
+
+      <div class="btns">
+        <input class="btn primary" type="submit" value="Submit (submit)">
+        <input class="btn ghost" type="reset" value="Reset (reset)">
+        <input class="btn ghost" type="button" value="Just a Button (button)" onclick="alert('Button clicked!')">
+        <input class="btn ghost" type="image" src="https://via.placeholder.com/140x44.png?text=Image+Submit" alt="Image submit" onclick="return imgSubmit()">
+      </div>
+
+      <p class="muted small">
+        Also email directly: <a href="mailto:hello@wandercanvas.example">hello@wandercanvas.example</a><br>
+        Quick break tag demo here<br>Done.
+      </p>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div>© 2026 WanderCanvas</div>
+</footer>
+</body>
+</html>

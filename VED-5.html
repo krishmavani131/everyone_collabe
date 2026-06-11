@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WanderCanvas | Home</title>
+  <style>
+    :root{--bg:#0b1220;--card:#111a2e;--text:#eaf0ff;--muted:#b9c6ff;--brand:#56d6ff;--brand2:#7cffa6;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,var(--bg),#050814);color:var(--text)}
+    header{padding:22px 18px;background:rgba(0,0,0,.25);backdrop-filter:blur(6px);position:sticky;top:0;border-bottom:1px solid rgba(255,255,255,.08)}
+    nav a{color:var(--text);text-decoration:none;margin-right:12px;padding:8px 10px;border-radius:10px;display:inline-block}
+    nav a:hover{background:rgba(86,214,255,.14)}
+    .brand{font-size:22px;font-weight:700;letter-spacing:.4px}
+    .hero{padding:28px 18px 10px;max-width:1100px;margin:0 auto}
+    .grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
+    .card{background:rgba(17,26,46,.85);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    .hero h1{margin:0 0 10px;font-size:34px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(124,255,166,.12);border:1px solid rgba(124,255,166,.25);color:var(--brand2)}
+    img{max-width:100%;border-radius:14px;border:1px solid rgba(255,255,255,.08)}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+    .kpis .mini{padding:12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{border:1px solid rgba(255,255,255,.1);padding:10px;text-align:left}
+    th{background:rgba(86,214,255,.12)}
+    footer{padding:18px;opacity:.9;border-top:1px solid rgba(255,255,255,.08);margin-top:18px}
+    .muted{color:var(--muted)}
+    .btn{background:linear-gradient(90deg,var(--brand),var(--brand2));border:0;color:#081022;padding:10px 12px;border-radius:12px;font-weight:700;cursor:pointer}
+    .btn:hover{filter:brightness(1.08)}
+    .note{font-size:14px}
+  </style>
+  <script>
+    function welcome(){
+      const d = new Date();
+      document.getElementById("today").innerHTML = d.toDateString();
+    }
+    function openTips(){
+      document.getElementById("tipsDialog").showModal();
+    }
+    function closeTips(){
+      document.getElementById("tipsDialog").close();
+    }
+  </script>
+</head>
+
+<body onload="welcome()">
+  <header>
+    <div class="brand">WanderCanvas</div>
+    <div class="muted note">
+      Paint your journeys with words, photos, and stories.<br>
+      Today: <mark id="today">Loading...</mark>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="#plan">Trip Plan</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="grid">
+      <article class="card">
+        <span class="pill">Featured Story</span>
+        <h1>From <b>sunrise</b> streets to <i>silent</i> mountains</h1>
+        <p class="muted">
+          This blog mixes <em>budget hacks</em>, food trails, and slow travel moments.
+          A tiny note in <tt>typewriter</tt> style, and a fun old tag: <blink>(blink)</blink> (some browsers may ignore it).
+        </p>
+        <p class="muted">
+          Water is H<sub>2</sub>O and altitude feels like 10<sup>3</sup> steps when trekking.
+          <br>Tap the button to read quick travel tips.
+        </p>
+        <button class="btn" onclick="openTips()">Open Quick Tips</button>
+
+        <dialog id="tipsDialog">
+          <h3>Quick Tips</h3>
+          <ul>
+            <li>Carry a reusable bottle.</li>
+            <li>Keep digital copies of documents.</li>
+            <li>Start early to beat crowds.</li>
+          </ul>
+          <button class="btn" onclick="closeTips()">Close</button>
+        </dialog>
+
+        <div id="plan" class="card" style="margin-top:14px;">
+          <h2>Mini Itinerary (Example)</h2>
+          <ol>
+            <li>Day 1: City walk + food market</li>
+            <li>Day 2: Nature trail + sunset point</li>
+            <li>Day 3: Local museum + café hopping</li>
+          </ol>
+
+          <dl>
+            <dt><b>Best season</b></dt>
+            <dd class="muted">Oct–Mar for many Indian destinations.</dd>
+            <dt><b>Style</b></dt>
+            <dd class="muted">Budget + culture + photography.</dd>
+          </dl>
+
+          <table>
+            <tr>
+              <th>City</th>
+              <th>Vibe</th>
+              <th>Top activity</th>
+            </tr>
+            <tr>
+              <td>Jaipur</td>
+              <td>Heritage</td>
+              <td>Fort sunset</td>
+            </tr>
+            <tr>
+              <td>Goa</td>
+              <td>Coastal</td>
+              <td>Beach + cafés</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Cover Snapshot</h2>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200" alt="Travel road">
+          <figcaption class="muted">A road that turns into a story.</figcaption>
+        </figure>
+
+        <h3>Try This</h3>
+        <p class="muted">Jump to the latest blog post list.</p>
+        <a class="btn" href="blogs.html" style="display:inline-block;text-decoration:none;">Go to Blogs</a>
+
+        <h3 style="margin-top:14px;">Audio Mood</h3>
+        <audio controls>
+          <source src="TRAVEL.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+
+        <h3 style="margin-top:14px;">Video Teaser</h3>
+        <video controls width="100%">
+          <source src="TRAVEL.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 WanderCanvas</div>
+    <div class="muted">Built with pure HTML + internal CSS.</div>
+  </footer>
+</body>
+</html>
